@@ -80,14 +80,21 @@
                       </div>
                     </div>
                     <div class="flex-item flex-column">
-                      <div class="control-group">
-                          <textarea class="custom-textbox stretch-on-mobile" placeholder="Type your transcription here!"></textarea>
+                      <form name='input' method='POST' action='https://formspree.io/bodabrotatochip@gmail.com'>
+                        Name: <input type='text' name='Name' placeholder='Your name'>
+                        Email: <input type='email' name='_replyto' placeholder='Your email'>
+                        Message:
+                        <div class="control-group">
+                            <textarea name='message' id="transcribedtext" rows=50 cols=80 class="custom-textbox stretch-on-mobile" placeholder="Type your transcription here!"></textarea>
+                        </div>
+                        <input type='submit' value='Send'>
+                        <input type='hidden' name = '_subject' value='Enter your subject here'/>
+                        <input type='hidden' name='_next' value='transcribe.html'/>
+                      </form>
                       </div>
-    
                     </div>
                     <div class="control-group">
-                      <!--TODO: MAKE THIS BOX BIGGER!! cover both columns-->
-                      <textarea rows=10 cols=100 class="custom-textbox stretch-on-mobile" readonly>
+                      <textarea rows=10 cols=157 class="custom-textbox stretch-on-mobile" readonly>
                         Tips:
                       </textarea>
                     </div>
