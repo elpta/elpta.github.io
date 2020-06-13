@@ -36,6 +36,11 @@
                       <p class="text">
                         Contribute to the community by helping transcribe these documents!
                       </p>
+                      <select id="ddl" style="margin-bottom: 10px;">
+                        <option value="Mixtec" selected="selected">Mixtec</option>
+                        <option value="Catalan">Catalan</option>
+                        <option value="Algonquin">Algonquin</option>
+                      </select>
                       <img id="doc" src="docs/mixtec0.png" alt="Handwritten Documents"
                         style="width:550px;height:880px;"/>
                       <div class="flex-row">
@@ -79,12 +84,12 @@
                       </div>
                     </div>
                     <div class="flex-item flex-column">
-                      <form name='input' method='POST' action='https://formspree.io/bodabrotatochip@gmail.com'>
+                      <form name='input' method='POST' action='https://formspree.io/bodabrotatochip@gmail.com' style="margin-top: 46px;">
                         Name: <input type='text' name='Name' placeholder='Your name'>
                         Email: <input type='email' name='_replyto' placeholder='Your email'>
                         Transcribed Text:
                         <div class="control-group">
-                            <textarea name='message' id="transcribedtext" rows=50 cols=80 class="custom-textbox stretch-on-mobile" placeholder="Type your transcription here!"></textarea>
+                            <textarea name='message' id="transcribedtext" rows=51 cols=80 class="custom-textbox stretch-on-mobile" placeholder="Type your transcription here!"></textarea>
                         </div>
                         <input type='submit' value='Send'>
                         <input type='hidden' name = '_subject' value='Enter your subject here'/>
@@ -107,7 +112,6 @@
                       </textarea>
                     </div>
                 </div>
-
             </div>
           </div>
         </div>
