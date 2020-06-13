@@ -1,7 +1,9 @@
-(function () {
-  "use strict";
+// to be implemented
 
-  $(function () {
-    $(".menu-container").load("menu.html");
-  });
-})();
+// (function () {
+//   "use strict";
+
+//   $(function () {
+//     $(".menu-container").load("menu.html");
+//   });
+// })();
