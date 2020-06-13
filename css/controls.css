@@ -1,0 +1,41 @@
+textarea.custom-textbox {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  background: rgb(255, 255, 255);
+  border: 1px solid #212F3C;
+  font-size: 16px;
+  border-radius: 2px;
+  resize: vertical;
+}
+
+
+textarea.custom-textbox {
+  min-height: 60px;
+  max-height: 200px;
+}
+
+textarea[readonly].custom-textbox {
+  cursor: default;
+  background: rgb(170, 163, 163);
+}
+
+.control-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* space betweeb read only and actual input box */
+.control-group .custom-textbox {
+  margin: 10px 0 10px 0;
+}
