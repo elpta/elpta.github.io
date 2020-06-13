@@ -54,6 +54,7 @@
                         <script>
                           var currImg = 0;
                           var numImgs = 4;
+                          var language = 'mixtec';
 
                           $('#buttonLeft').on({
                               'click': function(){
@@ -63,7 +64,7 @@
                                   } else {
                                     $('#buttonLeft').prop('disabled', true);
                                   }
-                                  $('#doc').attr('src','docs/mixtec' + currImg + '.png');
+                                  $('#doc').attr('src', `docs/${language}${currImg}.png`);
                               }
                           });
 
@@ -75,9 +76,18 @@
                                   } else {
                                     $('#buttonRight').prop('disabled', true);
                                   }
-                                  $('#doc').attr('src','docs/mixtec' + currImg + '.png');
+                                  $('#doc').attr('src', `docs/${language}${currImg}.png`);
                               }
                           });
+
+                          var ddl = document.getElementById('ddl');
+                          ddl.onchange = function() {
+                            language = ddl.value.toLowerCase();
+                            currImg = 0;
+                            $('#doc').prop('src', `docs/${language}${currImg}.png`);
+                            $('#buttonLeft').prop('disabled', true);
+                            $('#buttonRight').prop('disabled', false);
+                          }
                         </script>
                         
 
