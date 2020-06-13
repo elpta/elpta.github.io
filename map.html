@@ -6,7 +6,7 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-  <script src="js/menu.js"></script>
+  <script src="js/maps.js"></script>
 </head>
 
 <div class="header">
@@ -33,7 +33,9 @@
           <!---Interactive map that users can look at--------------------------------------------------------------------------------->
           <div class="flex-row">
             <div class="flex-item flex-column">
-              <iframe class="iframe-in-body" src="http://map idk haha .html"></iframe>
+              <div id="map"></div>
+              <script type="text/javascript" src="js/maps.js"></script>
+              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-q_SFWkX6sf67jqspMRzM_zp2-epitHg&callback=initMap"></script>
               <p class="text">
               This map aims to show how widespread the phenomena of endangered languages is an highlights
               why this is a worldwide issue.
