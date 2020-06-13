@@ -136,7 +136,7 @@ hr {
   overflow-x: auto;
 }
 
-.content-transcription {
+#transcribe {
   position: relative;
   margin: 0 auto;
   font-size: 16px;
@@ -145,7 +145,7 @@ hr {
   line-height: 1.5;
   max-width: 900px;
   overflow-x: auto;
-  margin-left: 20px;
+  justify-content: space-between;
 }
 
 .content p a,
