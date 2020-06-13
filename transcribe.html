@@ -7,6 +7,8 @@
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
   <script src="js/menu.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script>$('#buttonLeft').prop('disabled', true);</script>
 </head>
 
 <div class="header">
@@ -25,7 +27,6 @@
 
 <!--Start Body -->
 <body>
-  <div class="menu-container"></div>
     <div class="content-container">
       <div class="content">
         <div class="content-table flex-column">
@@ -35,21 +36,38 @@
               <!-------------------------------------------------------------------------------------------->
                 <div class="flex-row">
                     <div class="flex-item flex-column">
-                    <p class="text">
-                        Contribute to the community by helping transcribe these documents!
-                    </p>
-                    <div class="control-group">
-                        <textarea class="custom-textbox stretch-on-mobile" placeholder="ex: Loren Ipsum"></textarea>
+                      <img id="doc" src="docs/mixtec0.png" alt="Handwritten Documents"
+                        style="width:550px;height:880px;"/>
+                      <script src=js/gallery.js></script>
+                      <div class="flex-row">
+                        <div class="flex-item flex-column">
+                          <button id="buttonLeft">Previous Page</button>
+                        </div>
+                        <div class="flex-item flex-column">
+                          <button id="buttonRight">Next Page</button>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="flex-item flex-column">
+                      <p class="text">
+                          Contribute to the community by helping transcribe these documents!
+                      </p>
+                      <div class="control-group">
+                          <textarea class="custom-textbox stretch-on-mobile" placeholder="Type your transcription here!"></textarea>
+                      </div>
+    
                     </div>
                     <div class="control-group">
-                        <textarea class="custom-textbox stretch-on-mobile" readonly>Loren Ipsum ... </textarea>
-                    </div>
+                      <!--TODO: MAKE THIS BOX BIGGER!! cover both columns-->
+                      <textarea rows=10 cols=100 class="custom-textbox stretch-on-mobile" readonly>
+                        Tips:
+                      </textarea>
                     </div>
                 </div>
 
             </div>
           </div>
-          <!--End Body Text -------------------------------------------------->
         </div>
       </div>
     </div>
