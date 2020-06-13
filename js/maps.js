@@ -1,7 +1,7 @@
 // Initialize and add the map
 function initMap() {
     // The location of the languages
-    var mixtec = {lat: -25.344, lng: 131.036};
+    var mixtec = {lat: 17.8, lng: -97.767};
     var catalan = {lat: 41.587, lng: 1.621};
     var algonquin = {lat: 47.431, lng: -77.598};
 
@@ -12,6 +12,8 @@ function initMap() {
     var markerMixtec = new google.maps.Marker({position: mixtec, map: map});
     var markerCatalan = new google.maps.Marker({position: catalan, map: map});
     var markerAlgonquin = new google.maps.Marker({position: algonquin, map: map});
+
+    var zoomFactor = 5;
 
     var contentStringMixtec = '<div id="content">'+
         '<div id="siteNotice">'+
@@ -27,6 +29,8 @@ function initMap() {
         content: contentStringMixtec
     });
     markerMixtec.addListener('click', function() {
+        map.setZoom(zoomFactor);
+        map.panTo(markerMixtec.position);
         infowindowMixtec.open(map, markerMixtec);
     });
 
@@ -45,6 +49,8 @@ function initMap() {
         content: contentStringCatalan
     });
     markerCatalan.addListener('click', function() {
+        map.setZoom(zoomFactor);
+        map.panTo(markerCatalan.position);
         infowindowCatalan.open(map, markerCatalan);
     });
 
@@ -64,6 +70,8 @@ function initMap() {
         content: contentStringAlgonquin
     });
     markerAlgonquin.addListener('click', function() {
+        map.setZoom(zoomFactor);
+        map.panTo(markerAlgonquin.position);
         infowindowAlgonquin.open(map, markerAlgonquin);
     });
 }
